@@ -1,0 +1,22 @@
+{
+  "name": "Rbtpong",
+  "version": "0.8",
+  "description": "No one have to know !",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/EG-Julien/RobotPong",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+  "demo"
+],
+  "author": "EG Julien",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}

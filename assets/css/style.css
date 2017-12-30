@@ -1,0 +1,121 @@
+@import url('../fonts/SourceCodePro-Black.ttf');
+@import url('../fonts/SourceCodePro-Bold.ttf');
+@import url('../fonts/SourceCodePro-ExtraLight.ttf');
+@import url('../fonts/SourceCodePro-Light.ttf');
+@import url('../fonts/SourceCodePro-Medium.ttf');
+@import url('../fonts/SourceCodePro-Regular.ttf');
+@import url('../fonts/SourceCodePro-Semibold.ttf');
+
+body {
+    font-family: "Source Code Pro", sans-serif;
+     background: rgba(52, 76, 94, .5);
+    color: #FFF;
+    margin: 0 10%;
+}
+
+.center {
+    text-align: center;
+}
+
+.remote-control {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.button-command {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.button-command > .btn {
+    font-family: "Source Code Pro Semibold", sans-serif;
+    border: none;
+    margin-top: 65px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    color: #34495e;
+
+    transition-duration: 0.2s;
+}
+
+.active {
+    background: #2ecc71 !important;
+    color: #FFF;
+
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    border: none;
+}
+
+.joystick {
+    width: 50%;
+    height: 100%;
+}
+
+.light {
+    font-family: "Source Code Pro ExtraLight", sans-serif;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #e74c3c;
+    border: none;
+    cursor: pointer;
+}
+
+.minimize {
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #f1c40f;
+    border: none;
+    cursor: pointer;
+}
+
+.maximize {
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #2ecc71;
+    border: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: #c0392b;
+    transition-duration: 0.2s;
+}
+
+.minimize:hover {
+    background: #f39c12;
+    transition-duration: 0.2s;
+}
+
+.maximize:hover {
+    background: #27ae60;
+    transition-duration: 0.2s;
+}

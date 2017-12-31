@@ -7,7 +7,7 @@
   </head>
   <body>
 
-      <button class="close"></button>
+      <button class="close" onclick="AppClose();"></button>
       <button class="minimize"></button>
       <button class="maximize"></button>
 
@@ -27,7 +27,19 @@
         </div>
       </div>
     <script>
-      // You can also require other files to run in this process
+      const electron = require('electron');
+      const {ipcRenderer} = electron;
+
+      function setAuto() {
+          ipcRenderer.send('set:auto', "true");
+          console.log('auto');
+      }
+
+      function AppClose() {
+          ipcRenderer.send('close:close', "true");
+          console.log('close')
+      }
+
       require('./renderer.js')
     </script>
   </body>

@@ -4,6 +4,8 @@ const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
 
+const {ipcMain} = electron
+
 const path = require('path')
 const url = require('url')
 
@@ -41,6 +43,10 @@ function createWindow() {
         mainWindow = null
     })
 }
+
+ipcMain.on('close:close', function (e, data) {
+    app.quit()
+})
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
